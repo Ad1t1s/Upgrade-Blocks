@@ -1,0 +1,3 @@
+<app-column *ngFor="let block of blocks.all(); let index = index"  [index]="index" [blocks]="block"></app-column>
+
+<app-add-block mid='add-column-modal' (blockAdded)="addColumn($event)"></app-add-block>

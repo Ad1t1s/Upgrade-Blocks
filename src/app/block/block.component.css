@@ -1,0 +1,27 @@
+:host {
+	border: 1px solid gray;
+	box-shadow: 2px 1px 12px gray;
+	min-width: 200px;
+	max-width: 200px;
+	min-height: 200px;
+	max-height: 200px;
+	margin: 10px;
+	display: inline-block;
+    word-wrap:break-word;
+    overflow: scroll;
+}
+:host:hover {
+        animation: xx 1s normal; }
+@keyframes xx {
+	0% {
+		transform: rotate3d(0, 1, 0, 0deg);
+	}
+	50% {
+		transform: rotate3d(0, 1, 0, 20deg);
+		background-color: yellow;
+	}
+	100% {
+		transform: rotate3d(0, 1, 0, 0deg);
+	}
+}
+

@@ -1,0 +1,8 @@
+<div  *ngFor="let block of blocks; let blockIndex = index">
+	<button type="button" class="btn btn-warning btn-xs" (click)='removeFrom(blockIndex)'>-</button>
+	<app-block [title]="block"></app-block>
+	<br>
+</div>
+
+
+<app-add-block (blockAdded)="addBlock($event)" mid='column-modal-{{ index }}'></app-add-block>
