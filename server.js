@@ -16,7 +16,6 @@ function insert(data, cb) {
     ).then(
         function(result) {
 	    if(data.root) {
-                // do nothing
 	    } else if (data.children) {
 		findAndUpdateRoot(result.insertedId);
 	    } else {
